@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(180deg,black,pink);
+            background-repeat:no-repeat;
+            width: 100%;
+            height: 800px;
+            align-content: center;
+            justify-content: center;
+            display:flex; 
+            position: relative;
+            top: 150px;
+             
+        }
+#container{
+    background-color: rgba(240, 128, 200, 0.1);
+   width: 30%;
+   height: 300px;
+   box-shadow: 2px 2px 5px white;
+   
+   border-radius: 30px;
+   position: relative;
+   left:-500PX;
+   
+}
+
+#text{
+    width: 80%;
+    height: 30px;
+    position: relative;
+    left: 50px;
+    margin-top: 10PX;
+    background-color: pink;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+   
+}
+#a{
+    background-color: black;
+    border-radius: 50px;
+    width: 20%;
+    height: 30px;
+    color: rgb(225,61,94);
+    position: relative;
+    left: 40px;
+top: 5px;
+    transition:background-color 1s ;
+    
+}
+#a:hover{
+background-color:rgb(146, 10, 10);
+color: black;
+}
+#b{
+    color:gold;
+    position: relative;
+    font-size: 120px;
+    top: 10px;
+    left: 260px;
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 10px greenyellow;
+    transition: color 2s;
+}
+#b:hover{
+    color: red;
+}
+
+    </style>
+</head>
+<body>
+    <h1 id="b">CALCULATOR</h1>
+    <div id="container">
+        
+        <form name="cform">
+            <input type="text" name="answer" id="text">
+            <br><br>
+           
+            <input type="button" value="1" onclick="cform.answer.value +='1'" id="a">
+            <input type="button" value="2" onclick="cform.answer.value +='2'" id="a">
+            <input type="button" value="3" onclick="cform.answer.value +='3'" id="a">
+            <input type="button" value="+" onclick="cform.answer.value +='+'" id="a">
+        
+            <br><br>
+            <input type="button" value="4" onclick="cform.answer.value +='4'" id="a">
+            <input type="button" value="5" onclick="cform.answer.value +='5'" id="a">
+            <input type="button" value="6" onclick="cform.answer.value +='6'" id="a">
+            <input type="button" value="-" onclick="cform.answer.value +='-'" id="a">
+            <br><br>
+            <input type="button" value="7" onclick="cform.answer.value +='7'" id="a">
+            <input type="button" value="8" onclick="cform.answer.value +='8'" id="a">
+            <input type="button" value="9" onclick="cform.answer.value +='9'" id="a">
+            <input type="button" value="*" onclick="cform.answer.value +='*'" id="a">
+            <br><br>
+            <input type="button" value="\" onclick="cform.answer.value +='\'" id="a">
+            <input type="button" value="%" onclick="cform.answer.value +='%'" id="a">
+            <input type="button" value="0" onclick="cform.answer.value +='0'" id="a">
+            <input type="button" value="." onclick="cform.answer.value +='.'" id="a">
+            <br><br>
+            <input type="button" value="clear" onclick="cform.answer.value=' '" id="a">
+            <input type="button" value="=" onclick="cform.answer.value=eval(cform.answer.value)" id="a">
+            
+        
+        </form>
+    </div>
+    
+</body>
+</html>
